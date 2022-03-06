@@ -1,9 +1,13 @@
 # podnab
-Nabbing (to take, grab, or steal (something)) Podcasts for fun
+Nabbing (to take, grab, or steal (something)) podcasts for fun
 
 ## Introduction
 
-Podnab will be a podcast manager (inc rudimentary player). It's is NOT a serious effort to create a mature entry in the field of podcast managers. There are quite enough of those already. Rather, it's more of a playground for [gtk4-rs](https://gtk-rs.org/), the Rust bindings for [GTK4](https://gtk.org/). However, it is still supposed to be a "proper" app which might be usefull as a tutorial of sorts. 
+Podnab will be a podcast manager (inc rudimentary player). It's is NOT a serious effort to create a mature entry in the field of podcast managers. There are quite enough of those already. Rather, it's more of a playground for [gtk4-rs](https://gtk-rs.org/), the Rust bindings for [GTK4](https://gtk.org/). However, it is still supposed to be a "proper" app which might be useful as a tutorial of sorts. 
+
+## References
+
+[Event-Driven GTK by Example — 2021 Edition](https://mmstick.github.io/gtkrs-tutorials/) by [Micheal Murphy](https://github.com/mmstick)
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.

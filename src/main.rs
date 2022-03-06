@@ -1,5 +1,5 @@
 use gtk::prelude::*;
-use gtk::{Application, ApplicationWindow};
+use gtk::{Application, ApplicationWindow, Button};
 
 fn main() {
     // Create a new application
@@ -14,11 +14,29 @@ fn main() {
     app.run();
 }
 
+    
 fn build_ui(app: &Application) {
+
+    // Create a button with label and margins
+    let button = Button::builder()
+        .label("Press me!")
+        .margin_top(12)
+        .margin_bottom(12)
+        .margin_start(12)
+        .margin_end(12)
+        .build();
+
+    // Connect to "clicked" signal of `button`
+    button.connect_clicked(move |button| {
+        // Set the label to "Hello World!" after the button has been clicked on
+        button.set_label("Hello World!");
+    });
+
     // Create a window and set the title
     let window = ApplicationWindow::builder()
         .application(app)
         .title("Podnab")
+        .child(&button)
         .build();
 
     // Present window
